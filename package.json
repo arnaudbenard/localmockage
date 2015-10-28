@@ -1,0 +1,26 @@
+{
+  "name": "localmockage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "rimraf lib && babel src --out-dir lib",
+    "test": "mocha --compilers js:babel/register --reporter spec test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaudbenard/localmockage.git"
+  },
+  "author": "Arnaud Benard <arnaudm.benard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnaudbenard/localmockage/issues"
+  },
+  "homepage": "https://github.com/arnaudbenard/localmockage#readme",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "expect": "^1.12.2",
+    "mocha": "^2.3.3",
+    "rimraf": "^2.4.3"
+  }
+}
